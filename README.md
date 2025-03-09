@@ -3,6 +3,8 @@ Flask PDF Shrinker API
 
 This is a simple Flask API that allows users to upload a PDF file, shrink it (reducing and conforming the filesize to a quality preset) using Ghostscript, and download the shrunk PDF. The service also includes a cleanup mechanism to delete old files from the temporary upload folder on a regular schedule.
 
+![Tests](https://github.com/rjnichols/flask-pdf-shrinker-api/actions/workflows/python-app.yml/badge.svg)
+
 Features
 --------
 
