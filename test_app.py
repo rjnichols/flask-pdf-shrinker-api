@@ -110,7 +110,7 @@ class TestFlaskAPI(unittest.TestCase):
         # Save the shrunk PDF for inspection
         with open(output_pdf_path, 'wb') as f:
             f.write(response.body)
-        self.assertTrue(os.path.exists(output_pdf_path))
+        self.assertFalse(os.path.exists(output_pdf_path))
         self.assertTrue(os.path.getsize(output_pdf_path) < os.path.getsize(sample_pdf_path))
 
     def test_invalid_file_upload(self):
